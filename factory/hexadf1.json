@@ -1,0 +1,9 @@
+{
+	"name": "hexadf1",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3668a1f4-69e3-4ae6-b8dd-8adc093f4243",
+		"tenantId": "84f1e4ea-8554-43e1-8709-f0b8589ea118"
+	}
+}
