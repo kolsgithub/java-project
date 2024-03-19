@@ -1,0 +1,15 @@
+{
+	"name": "AzureDataLakeStorage1",
+	"properties": {
+		"description": "DataLake-linked Services",
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://kolssg1.dfs.core.windows.net/"
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
