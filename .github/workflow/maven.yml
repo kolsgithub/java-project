@@ -1,0 +1,27 @@
+
+# below is the running maven yml
+
+name: Java CI with Maven
+
+on:
+  workflow_call:
+    inputs:
+      branch_or_tag:
+        description: 'The branch or tag to build'
+        required: true
+        type: string
+
+jobs:
+  build:
+    runs-on: ubuntu
+
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v3
+    - name: setting up java
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'oracle'
+        java-version: '17.0.1'
+    - name: verify java version
+      run: java -version
